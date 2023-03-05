@@ -1,0 +1,14 @@
+<div class="class">
+  <h2>tho way Databing</h2>
+  <form>
+    <input type="text"
+    [(ngModel)]="name"
+    name="name"
+    placeholder="Digite o seu nome">
+    <input type="submit" value="Enviar">
+    <br>
+  </form>
+  <p
+  *ngIf="name !== ''"
+  >O nome é {{name}}</p>
+</div>

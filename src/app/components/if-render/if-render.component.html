@@ -1,0 +1,14 @@
+<div class="class">
+  <div
+      *ngIf="canshow"
+  >
+  Estamos mostrando isso porque foi pemitido</div>
+  <h2 *ngIf="name === 'Matheus' ; else nameNotfound">Nome é Matheus</h2>
+  <ng-template
+    #nameNotfound
+  >
+  <div>
+    <h2>O nome nao  foi  encontrado</h2>
+  </div>
+  </ng-template>
+</div>
